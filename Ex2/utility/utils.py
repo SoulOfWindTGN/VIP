@@ -41,6 +41,8 @@ def color_analysis(img):
     centroid = clf.cluster_centers_
     percent = []
     hex_colors = []
+
+    # Calculating percent each color
     for i in range(len(centroid)):
         j = labels.count(i)
         j = j / (len(labels))
